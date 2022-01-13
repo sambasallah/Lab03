@@ -15,18 +15,18 @@
             <div class="form-group">
                 <div class="block">
                     <label for="Student Name">Student Name</label> <br>
-                    <input type="text" name="studentName">
+                    <input type="text" name="studentName" required>
                 </div>
                 <div class="block">
                     <label for="Student ID">Student ID</label> <br>
-                    <input type="text" name="studentID">
+                    <input type="text" name="studentID" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="block">
                     <label for="assignment">Select Assignment</label> <br>
-                    <select name="assignment" id="assignment">
+                    <select name="assignment" id="assignment" required>
                         <option value="0">Select</option>
                         <option value="Lab01">Lab 01</option>
                         <option value="Lab02">Lab 02</option>
@@ -36,8 +36,7 @@
                 </div>
                 <div class="block">
                    <label for="entry">Entry</label> <br>
-                   <div style="">
-                    <input type="radio" name="entry" value="Feb">
+                    <input type="radio" name="entry" value="Feb" selected>
                     <label for="Feb">Feb</label> 
                     <input type="radio" name="entry" value="May">
                     <label for="May">May</label> 
@@ -45,7 +44,10 @@
                     <label for="August">August</label> 
                     <input type="radio" name="entry" value="November">
                     <label for="November">November</label>
-                   </div> 
+                </div>
+                <div class="block">
+                    <label for="confirm">Are you sure?</label>
+                    <input type="checkbox" name="confirm" required>
                 </div>
             </div>
 
