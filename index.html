@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Exercise</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Grades Page</h1>
+        <form action="http://mumstudents.org/params.php" method="get">
+
+            <div class="form-group">
+                <div class="block">
+                    <label for="Student Name">Student Name</label> <br>
+                    <input type="text" name="studentName">
+                </div>
+                <div class="block">
+                    <label for="Student ID">Student ID</label> <br>
+                    <input type="text" name="studentID">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="block">
+                    <label for="assignment">Select Assignment</label> <br>
+                    <select name="assignment" id="assignment">
+                        <option value="0">Select</option>
+                        <option value="Lab01">Lab 01</option>
+                        <option value="Lab02">Lab 02</option>
+                        <option value="Lab03">Lab 03</option>
+                        <option value="Lab03">Lab 04</option>
+                    </select>
+                </div>
+                <div class="block">
+                   <label for="entry">Entry</label> <br>
+                   <div style="">
+                    <input type="radio" name="entry" value="Feb">
+                    <label for="Feb">Feb</label> 
+                    <input type="radio" name="entry" value="May">
+                    <label for="May">May</label> 
+                    <input type="radio" name="entry" value="August">
+                    <label for="August">August</label> 
+                    <input type="radio" name="entry" value="November">
+                    <label for="November">November</label>
+                   </div> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="block">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
